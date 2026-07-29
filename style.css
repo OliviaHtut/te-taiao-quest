@@ -1,7 +1,111 @@
 @import url(https://fonts.googleapis.com/css?family=Google+Sans);
 
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family: "Google Sans", sans-serif;
+}
 
+/* Outer container of header */
+header{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    padding: 20px;
+}
+
+/* Navigation Bar Container */
+.nav-container{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+/* Main navigation bar */
 nav{
+    background-color: #D9DA84;
+    border-radius: 50px;
+    display:flex;
+    align-items: center;
+    padding: 6px 20px 6px 20px;
+}
+
+.logo{
+    height: 38px;
+    width: auto;
+    margin-right: 15px; /* Providing more space for the logo and the hyperlinks */
+}
+
+/* Decorating the navigation links */
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+
+.nav-links a{
+    font-weight:bold;
+    font-size:15px;
+    color:#113c24;
+    text-decoration: none;
+    transition: opacity 0.2s ease; /* Giving interactive styling to the links */
+}
+
+.nav-links a:hover {
+    opacity:0.7;
+}
+
+/* Language Toggle and Search Button */
+.lang-btn, .search-btn-one{
+    background-color: #D9DA84;
+    border:none;
+    outline:none;
+    border-radius: 50%;
+    width:50px;
+    height:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Google Sans";
+    font-weight: bold;
+    font-size: 15px;
+
+}
+
+
+
+#lang-button{
+    height:50px;
+    width:50px;
+    padding:0;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #D9DA84;
+}
+
+#lang-button :last-child{
+    display:none;
+}
+
+#lang-button :checked first-child{
+    display:none;
+}
+
+#lang-button :checked last-child {
+    display: block;
+}
+
+
+/* nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
     ul{
         list-style-type:none;
         margin: 0;
@@ -9,8 +113,8 @@ nav{
         display: flex;
         justify-content:center;
         background-color: #D9DA84;
-        margin-left:25%;
-        margin-right:25%;
+        margin-left:15%;
+        margin-right:15%;
         border-radius: 100px;
     }
 
@@ -26,6 +130,19 @@ nav{
     ul li a:hover {
         background-color: #fcf6b9;
     }
-
     
+    .logo{
+        max-width:50px;
+        width:auto;
+    }
+}
+    .selected-lang{
+    cursor:pointer;
+    background-color: #D9DA84;
+    border-radius: 50%;
+    height:50px;
+    width:50px;
+    display:flex;
+    text-align: center;
+
 }
