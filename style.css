@@ -1,0 +1,31 @@
+@import url(https://fonts.googleapis.com/css?family=Google+Sans);
+
+
+nav{
+    ul{
+        list-style-type:none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content:center;
+        background-color: #D9DA84;
+        margin-left:25%;
+        margin-right:25%;
+        border-radius: 100px;
+    }
+
+    ul li a{
+        display:block;
+        color: #113c24;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-family:'Google Sans';
+        font-weight:bold;
+    }
+
+    ul li a:hover {
+        background-color: #fcf6b9;
+    }
+
+    
+}

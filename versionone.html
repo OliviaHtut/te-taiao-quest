@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>The Project: Homepage</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">  
+<meta name="author" content="Olivia Htut">
+<meta name="description" content="Te Taiao Quest Homepage">
+<script src="https://kit.fontawesome.com/3e5daf78f1.js" crossorigin="anonymous"></script>
+<!--The below code links Google Fonts icons-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+<!--This one links to SwiperJS CSS and script using CDN-->
+<link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<!--Custom script-->
+<script src="script.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="#"><img src="images/Te Taiao Quest Logo.svg" alt="Te Taiao Quest Logo"></a>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="native.html">Native Plants</a></li>
+            <li><a href="threats.html">Threats</a></li>
+            <li><a href="get.html">Get Involved</a></li>
+            <li><a href="more.html">More</a></li>
+        </ul>
+        <div class="lang-button">
+            <div class="selected-lang">
+                ENG
+            </div>
+            <ul>
+                <li><a>TE REO</a></li>
+            </ul>
+        </div>
+        <div class="search-one"> <!--The first search button in the navigation. This is in every page. -->
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search..." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </nav>
+    
+    <header> <!--Banner section-->
+        <video autoplay muted loop id="backgroundVideo">
+            <source src="videos/original_4aklBAbI.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h1>TE TAIAO QUEST</h1>
+            <div class="search-two"> <!--Second search button for accessibility. Only in homepage. -->
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search..." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+    </header>
+    <section>
+        <div class="top-section">
+            <h2>Information of New Zealand's Native Plants all in one place.</h2>
+            <video controls id="documentary" >
+                <source src="videos/original_4aklBAbI.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="carousel-section:"><!--Card Swiper in here-->
+            <div class="container swiper">
+                <div class="card-wrapper">
+                    <ul class="card-list swiper-wrapper">
+                        <li class="card-item swiper-slide">
+                            <a href="#" class="card-link">
+                                <img src="images/placeholder.png" alt="Image" class="card-image">
+                                <h2 class="card-title">Homepage</h2>
+                                <button class="card-button
+                                material-symbols-rounded">arrow_forward</button>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="about.html" class="card-link">
+                                <img src="images/placeholder.png" alt="Image" class="card-image">
+                                <h2 class="card-title">About Us</h2>
+                                <button class="card-button
+                                material-symbols-rounded">arrow_forward</button>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="native.html" class="card-link">
+                                <img src="images/placeholder.png" alt="Image" class="card-image">
+                                <h2 class="card-title">Native Plants</h2>
+                                <button class="card-button
+                                material-symbols-rounded">arrow_forward</button>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="threats.html" class="card-link">
+                                <img src="images/placeholder.png" alt="Image" class="card-image">
+                                <h2 class="card-title">Threats</h2>
+                                <button class="card-button
+                                material-symbols-rounded">arrow_forward</button>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="get.html" class="card-link">
+                                <img src="images/placeholder.png" alt="Image" class="card-image">
+                                <h2 class="card-title">Get Involved</h2>
+                                <button class="card-button
+                                material-symbols-rounded">arrow_forward</button>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="more.html" class="card-link">
+                                <img src="images/placeholder.png" alt="Image" class="card-image">
+                                <h2 class="card-title">More</h2>
+                                <button class="card-button
+                                material-symbols-rounded">arrow_forward</button>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>      
+    </section>
+    <footer class="footer-classic" role ="contentinfo">
+        <div class="footer-classic_container">
+            <div class="footer-classic_main">
+                <!-- Logo section -->
+                 <div class="footer-classic_brand">
+                    <a href="#" class="logo" aria-label="Te Taiao Quest Homepage"><img src="images/Te Taiao Quest Logo.svg" alt="Te Taiao Quest Logo"></a>
+                 </div>
+                <div class="footer-classic_links">
+                    <h3 class="footer-classic_heading">TE TAIAO QUEST</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="native.html">Native Plants</a></li>
+                        <li><a href="threats.html">Threats</a></li>
+                        <li><a href="get.html">Get Involved</a></li>
+                    </ul>
+                </div>
+                <div class="footer-classic_links">
+                    <h3 class="footer-classic_heading">CONTACT US</h3>
+                    <ul>
+                        <li><a href="https://www.instagram.com/rangisoutheastasian?igsh=MWM4a3JhMGZzdm9vbA==">Instagram</a></li>
+                        <li><a href="https://www.facebook.com/">Facebook</a></li>
+                        <li><a href="https://x.com/">X</a></li>
+                        <li><a href="https://nz.linkedin.com/in/olivia-htut-87b359403">LinkedIn</a></li>
+                        <li><a href="https://linktr.ee/">Linktree</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
