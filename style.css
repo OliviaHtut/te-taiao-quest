@@ -50,7 +50,7 @@ nav{
     font-size:15px;
     color:#113c24;
     text-decoration: none;
-    transition: opacity 0.2s ease; /* Giving interactive styling to the links */
+    transition: opacity 0.5s ease; /* Giving interactive styling to the links */
 }
 
 .nav-links a:hover {
@@ -58,8 +58,9 @@ nav{
 }
 
 /* Language Toggle and Search Button */
-.lang-btn, .search-btn-one{
+.lang-btn, .search-btn{
     background-color: #D9DA84;
+    color:#113c24;
     border:none;
     outline:none;
     border-radius: 50%;
@@ -71,36 +72,27 @@ nav{
     font-family: "Google Sans";
     font-weight: bold;
     font-size: 15px;
-
+    cursor:pointer;
+    transition: background-color 0.5s ease;
 }
 
+.lang-btn:hover, .search-btn:hover{
+    background-color: #cbcc75; /*Lower opacity colour*/
+}
 
-
-#lang-button{
-    height:50px;
-    width:50px;
-    padding:0;
-    border-radius: 50%;
+.search-btn-one{
     display:flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    vertical-align: middle;
-    background-color: #D9DA84;
 }
 
-#lang-button :last-child{
-    display:none;
+/* Hiding Input Field by Default */
+.search-input{
+    width:0;
+    border:none;
+    outline:none;
+    background:transparent; /* Such that the white box doesn't appear */
+    color:#113c24;
+    padding:0;
 }
-
-#lang-button :checked first-child{
-    display:none;
-}
-
-#lang-button :checked last-child {
-    display: block;
-}
-
 
 /* nav{
     display:flex;
@@ -146,3 +138,32 @@ nav{
     text-align: center;
 
 }
+
+
+
+
+#lang-button{
+    height:50px;
+    width:50px;
+    padding:0;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #D9DA84;
+}
+
+#lang-button :last-child{
+    display:none;
+}
+
+#lang-button :checked first-child{
+    display:none;
+}
+
+#lang-button :checked last-child {
+    display: block;
+}
+
