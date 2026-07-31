@@ -28,6 +28,7 @@ header{
 
 /* Main navigation bar */
 nav{
+    position:relative;
     background-color: #D9DA84;
     border-radius: 50px;
     display:flex;
@@ -68,6 +69,7 @@ nav{
 
 /* Language Toggle and Search Button */
 .lang-btn, .search-btn{
+    position:relative;
     background-color: #D9DA84;
     color:#113c24;
     border:none;
@@ -104,6 +106,52 @@ nav{
     background:transparent; /* Such that the white box doesn't appear */
     color:#113c24;
     padding:0;
+}
+
+/*Banner Section
+.banner {
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:#333;
+    font-weight: bolder;
+    color:#D9DA84;
+    position:relative;
+    overflow:hidden;
+}
+
+#backgroundVideo {
+    position:fixed;
+    top:0;
+    left:0;
+    min-width: 100%;
+    min-height:100%;
+
+}*/
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow:hidden;
+    margin:10%;
+}
+
+#banner-header{
+    font-weight: 900;
+    font-size: 55px;
+    color: #D9DA84;
+}
+
+/* Background video */
+#backgroundVideo {
+    position:absolute;
+    right:0;
+    bottom:0;
+    min-width:100%;
+    min-height:100%;
+    z-index: -1;   
 }
 
 
