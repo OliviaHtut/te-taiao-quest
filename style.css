@@ -1,5 +1,6 @@
+/* Google Fonts */
 @import url(https://fonts.googleapis.com/css?family=Google+Sans);
-
+@import url(https://fonts.googleapis.com/css?family=Outfit);
 
 *{
     box-sizing:border-box;
@@ -139,8 +140,9 @@ nav{
 }
 
 #banner-header{
-    font-weight: 900;
-    font-size: 55px;
+    font-weight: bolder;
+    font-family: "Outfit";
+    font-size: 80px;
     color: #D9DA84;
 }
 
