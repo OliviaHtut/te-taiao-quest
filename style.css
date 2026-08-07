@@ -11,7 +11,8 @@
 
 /* Section */
 section{
-    background-color:beige;
+    background-color:rgb(243, 233, 221);
+    
 }
 
 /* Outer container of header */
@@ -150,7 +151,7 @@ nav{
 
 /* Background video */
 #backgroundVideo {
-    position:absolute;
+    position:fixed;
     right:0;
     bottom:0;
     min-width:100%;
@@ -192,21 +193,51 @@ nav{
     transition: background-color 0.5s ease;
 }
 
+/* Top Section of Website */
 .top-section{
     display:flex;
     justify-content:center;
-    text-align: center;
+    text-align: left;
     align-items: center;
-    font-size: large;
-    
+    font-size: xx-large;
+    padding:30px;
 }
 
 .top-section video{
     padding:30px;
-    width:45%;
+    width:50%;
+    min-width: 500px;
     border:none;
     outline:none;
 }
+
+/* Carousel Code */
+.carousel-section{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.card-wrapper {
+    max-width: 1100px;
+    margin: 0 60px 35px;
+    overflow:hidden;
+}
+
+/* Different Links within Carousel */
+.card-list .card-item{
+    list-style: none;
+}
+
+.card-item .card-list .card-link {
+    display:block;
+    
+}
+
+.card-item .card-link .card-image {
+    width:40%;
+}
+
 
 
 /* nav{
