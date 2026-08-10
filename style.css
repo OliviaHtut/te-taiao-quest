@@ -219,25 +219,69 @@ nav{
 }
 
 .card-wrapper {
-    max-width: 1100px;
+    max-width: 1500px;
     margin: 0 60px 35px;
-    overflow:hidden;
+    padding:20px 10px;
+    overflow: hidden;
 }
 
-/* Different Links within Carousel */
-.card-list .card-item{
+.card-list .card-item {
     list-style: none;
 }
 
-.card-item .card-list .card-link {
+/* Different Links within Carousel */
+.card-link {
     display:block;
+    background: #113c24;
+    padding:18px;
+    border-radius: 18px;
+    font-size:18px;
+    text-decoration: none;
+    color:#D9DA84;
+    border:5px solid transparent;
+    box-shadow: 0 10px 10px rgb(211, 202, 191);
+    transform: 0.4 ease;
+    transition: border-color 0.4s ease;
+}
+
+.card-link:active {
+    cursor:grabbing;
+}
+
+.card-link:hover {
     
+    border-color:#d9da8467;
 }
 
-.card-item .card-link .card-image {
+.card-image {
     width:40%;
+    border-radius: 18px;
 }
 
+.card-title {
+    font-size:2rem;
+}
+
+.card-button {
+    margin-top: 20px;
+    height:40px;
+    width:40px;
+    color:#D9DA84;
+    background: none;
+    cursor:pointer;
+    border-radius: 50%;
+    border:2px solid #D9DA84;
+    transform: rotate(-45deg);
+    transition: 0.4s ease;
+}
+
+
+
+/* Effect for when mouse hovers over card */
+.card-link:hover .card-button {
+    color:#0a2416;
+    background-color: #cbcc75;
+}
 
 
 /* nav{
