@@ -227,10 +227,12 @@ nav{
 
 .card-list .card-item {
     list-style: none;
+    padding-left:18px;
 }
 
 /* Different Links within Carousel */
 .card-link {
+    user-select: none;
     display:block;
     background: #113c24;
     padding:18px;
@@ -239,7 +241,7 @@ nav{
     text-decoration: none;
     color:#D9DA84;
     border:5px solid transparent;
-    box-shadow: 0 10px 10px rgb(211, 202, 191);
+    box-shadow: 0 10px 10px rgb(148, 141, 133);
     transform: 0.4 ease;
     transition: border-color 0.4s ease;
 }
@@ -254,34 +256,20 @@ nav{
 }
 
 .card-image {
-    width:40%;
+    width:100%;
+    opacity: 0.7;
     border-radius: 18px;
+    transition: opacity 0.5s ease;
+}
+
+.card-image:hover {
+    opacity: 1;
 }
 
 .card-title {
     font-size:2rem;
 }
 
-.card-button {
-    margin-top: 20px;
-    height:40px;
-    width:40px;
-    color:#D9DA84;
-    background: none;
-    cursor:pointer;
-    border-radius: 50%;
-    border:2px solid #D9DA84;
-    transform: rotate(-45deg);
-    transition: 0.4s ease;
-}
-
-
-
-/* Effect for when mouse hovers over card */
-.card-link:hover .card-button {
-    color:#0a2416;
-    background-color: #cbcc75;
-}
 
 
 /* nav{
@@ -401,8 +389,23 @@ Banner Section
     color:#113c24;
 }
 
+.card-button {
+    margin-top: 20px;
+    height:40px;
+    width:40px;
+    color:#D9DA84;
+    background: none;
+    cursor:pointer;
+    border-radius: 50%;
+    border:2px solid #D9DA84;
+    transform: rotate(-45deg);
+    transition: 0.4s ease;
+}
 
-
-
+/* Effect for when mouse hovers over card 
+.card-link:hover .card-button {
+    color:#0a2416;
+    background-color: #cbcc75;
+}
 
 
