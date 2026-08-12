@@ -46,6 +46,17 @@ nav{
     height: 38px;
     width: auto;
     margin-right: 15px; /* Providing more space for the logo and the hyperlinks */
+    
+}
+
+/* The code doesn't work. */
+.logo img {
+    opacity: 0.3;
+    transition: opacity 0.5s ease;
+}
+
+.logo img a:hover {
+    opacity: 1;
 }
 
 
@@ -270,7 +281,13 @@ nav{
     font-size:2rem;
 }
 
+@view-transition {
+    navigation:auto;
+}
 
+::view-transition-group(root) {
+    animation-duration:0.5s;
+}
 
 /* nav{
     display:flex;
