@@ -165,6 +165,40 @@ nav{
     display:block;
 }
 
+.health {
+    display:flex;
+    padding:30px;
+    justify-content:center;
+    text-align:left;
+    align-items:center;
+    padding:15px;
+    color:#D9DA84;
+    background-color:#113c24;
+}
+
+.main-text {
+    display:block;
+    padding-left:50px;
+    padding-right:50px;
+    h3{
+        text-align:center;
+        font-size:xx-large;
+    }
+    p{
+        font-size:larger;
+        text-align:justify;
+    }
+}
+
+.health img{
+    padding:15px;
+    width:40%;
+    border-radius:50px;
+}
+
+
+
+/* Page transition */
 @view-transition {
     navigation:auto;
 }
@@ -172,3 +206,4 @@ nav{
 ::view-transition-group(root) {
     animation-duration:0.5s;
 }
+
