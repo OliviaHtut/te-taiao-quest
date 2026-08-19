@@ -165,18 +165,7 @@ nav{
     display:block;
 }
 
-.health {
-    display:flex;
-    padding:30px;
-    justify-content:center;
-    text-align:left;
-    align-items:center;
-    padding:15px;
-    color:#D9DA84;
-    background-color:#113c24;
-    box-shadow: inset 0px 25px 50px 0px rgb(243, 233, 221);
-}
-
+/* Main text code for all Sections */
 .main-text {
     display:block;
     padding-left:75px;
@@ -191,13 +180,51 @@ nav{
     }
 }
 
-.health img{
+.about, .values {
+    display:flex;
+    justify-content:center;
+    text-align:left;
+    align-items:center;
+    padding:15px;
+    color:#D9DA84;
+    background-color:#113c24;
+}
+
+.about {
+    box-shadow: inset 0px -35px 20px -10px rgb(243, 233, 221);
+}
+
+.values {
+    box-shadow: inset 0px 35px 20px -10px rgb(243, 233, 221);
+}
+
+.green{
+    padding:15px 15px 0px 15px;
+    width:40%;
+    border-radius:50px;
+    
+}
+
+.mission {
+    display:flex;
+    justify-content:center;
+    text-align:left;
+    align-items:center;
+    padding:15px;
+    color:#113c24;
+}
+
+.mission img {
     padding:15px;
     width:40%;
     border-radius:50px;
 }
 
-
+.values img {
+    padding: 35px 15px 15px 15px;
+    width:40%;
+    border-radius:50px;
+}
 
 /* Page transition */
 @view-transition {
