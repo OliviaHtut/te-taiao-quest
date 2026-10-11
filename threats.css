@@ -157,16 +157,28 @@ nav{
 
 
 .threats {
-    display:flex;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,500px);
+    gap:20px;
     font-size: 20px;
     justify-content:center ;
+    height:1020px;
+    overflow-y:scroll;
+}
+
+.anima {
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    
 }
 
 .threats img{
+    height:auto;
     width:100%;
-    padding:10px;
     padding-bottom: 5px;
+    border-radius: 10px ;
+    
 }
 
 
@@ -177,3 +189,4 @@ nav{
 ::view-transition-group(root) {
     animation-duration:0.5s;
 }
+

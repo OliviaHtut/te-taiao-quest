@@ -1,0 +1,192 @@
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Google+Sans);
+@import url(https://fonts.googleapis.com/css?family=Outfit);
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family: "Google Sans", sans-serif;
+    
+}
+
+body{
+    background-color:rgb(243, 233, 221) ;
+}
+
+/* Outer container of header */
+header{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    padding: 20px;
+}
+
+/* Navigation Bar Container */
+.nav-container{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+
+/* Main navigation bar */
+nav{
+    position:relative;
+    background-color: #D9DA84;
+    border-radius: 50px;
+    display:flex;
+    align-items: center;
+    padding: 6px 20px 6px 20px;
+}
+
+
+.logo{
+    height: 38px;
+    width: auto;
+    margin-right: 15px; /* Providing more space for the logo and the hyperlinks */
+    
+}
+
+
+/* Decorating the navigation links */
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+
+
+.nav-links a{
+    font-weight:bold;
+    font-size:15px;
+    color:#113c24;
+    text-decoration: none;
+    transition: opacity 0.5s ease; /* Giving interactive styling to the links */
+}
+
+
+.nav-links a:hover {
+    opacity:0.7;
+}
+
+
+/* Language Toggle and Search Button */
+.lang-btn, .search-btn{
+    position:relative;
+    background-color: #D9DA84;
+    color:#113c24;
+    border:none;
+    outline:none;
+    border-radius: 50%;
+    width:50px;
+    height:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Google Sans";
+    font-weight: bold;
+    font-size: 15px;
+    cursor:pointer;
+    transition: background-color 0.5s ease;
+}
+
+
+.lang-btn:hover, .search-btn:hover, .search-btn-two:hover{
+    background-color: #cbcc75; /*Lower opacity colour*/
+}
+
+/* Search Box Wrapper */
+.search-box-one{
+    display:flex;
+    align-items: center;
+    background-color: #D9DA84;
+    border-radius: 50px;
+    width:50px;
+    height:50px;
+    transition: width 0.4 ease, padding 0.4s ease; /* When the box expands */
+}
+
+
+/* Hiding Input Field by Default */
+.search-input{
+    width:0;
+    border:none;
+    outline:none;
+    background:transparent; /* Such that the white box doesn't appear */
+    color:#113c24;
+    padding:0;
+}
+
+/* Expanded State Linked to JavaScript */
+.search-box-one.active{
+    padding-left: 15px;
+}
+
+.search-box-onw.active .search-input {
+    width:180px; /* Expanding open */
+    padding-right:10px; 
+}
+
+::placeholder{
+    color:#113c24;
+}
+
+/* Top Section of Website */
+.top-section{
+    display:flex;
+    justify-content:center;
+    text-align: left;
+    align-items: center;
+    font-size: xx-large;
+    font-weight:light;
+    padding:30px;
+    color:#113c24;
+}
+
+.top-section img{
+    padding:30px;
+    width:50%;
+    border-radius:50px;
+}
+
+.intro-text {
+    display:block;
+}
+
+
+.threats {
+    display:grid;
+    grid-template-columns: repeat(auto-fit,500px);
+    gap:20px;
+    font-size: 20px;
+    justify-content:center ;
+    height:1020px;
+    overflow-y:scroll;
+}
+
+.anima {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.threats img{
+    height:auto;
+    width:100%;
+    padding-bottom: 5px;
+    border-radius: 10px ;
+    
+}
+
+
+@view-transition {
+    navigation:auto;
+}
+
+::view-transition-group(root) {
+    animation-duration:0.5s;
+}
+
