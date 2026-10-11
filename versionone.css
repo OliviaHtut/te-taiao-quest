@@ -2,6 +2,11 @@
 @import url(https://fonts.googleapis.com/css?family=Google+Sans);
 @import url(https://fonts.googleapis.com/css?family=Outfit);
 
+
+:root {
+    --dark-green: #113c24;
+    --light-green: #D9DA84;
+}
 *{
     box-sizing:border-box;
     margin:0;
@@ -145,6 +150,10 @@ nav{
     color:#113c24;
 }
 
+.top-section p {
+    font-size: medium;
+}
+
 .top-section img{
     padding:30px;
     width:50%;
@@ -190,3 +199,65 @@ nav{
     animation-duration:0.5s;
 }
 
+
+.dropdown-wrapper {
+    position:relative;
+}
+
+/* When active */
+.dropdown-wrapper.open .dropdown {
+    display:block;
+}
+
+.dropdow-wrapper.open .dropdown-toggle img {
+    transform: rotate(180deg); /* Animated dropdown arrow when clicked */
+}
+
+.dropdown-wrapper .dropdown-toggle {
+    border-radius:5px;
+    border:none;
+    background:var(--dark-green);
+    color:var(--light-green);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px 0 26px;
+    text-align: center;
+    cursor: pointer;
+    font-size:large;
+    height:50px;
+}
+
+.dropdown-wrapper .dropdown {
+    width:100%;
+    max-width: 400px;
+    border-radius:5px;
+    border:none;
+    color:#113c24;
+    font-size: small;
+    position:absolute;
+    top:60px;
+    left:0;
+    padding: 10px 10px 10px 0;
+    z-index: 1;
+    height:65px;
+}
+
+.dropdown {
+    height:100px;
+}
+
+.dropdown-wrapper .dropdown-toggle img {
+    transition:transform 0.3s;
+    width:auto;
+    height:auto;
+    padding:0px 0px 0px 10px;
+}
+
+.dropdown-wrapper .dropdown ul {
+    padding:0;
+    margin:0;
+    list-style:none;
+    height:50px;
+    overflow-y: auto;
+}

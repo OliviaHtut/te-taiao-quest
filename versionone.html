@@ -40,90 +40,176 @@
     </header>
     <section>
         <div class="top-section">
-            <p>*Use the filters to specify the type of plant you're looking for.</p>
-            
+            <!--<p>*Use the filters to specify the type of plant you're looking for.</p>-->
+            <div class="dropdown-wrapper">
+                <button class="dropdown-toggle" aria-expanded="false"> <!-- Button content is currently hidden, element is collapsed-->
+                    <span>Pests</span>
+                    <img src="images/arrowDown.svg">
+                </button> 
+                <div class="dropdown">
+                    <ul>
+                        <li class="active">
+                            <a id="all-animal">All Animal Pests</a>
+                        </li>
+                        <li class="active">
+                            <a id="mustelids">Mustelids</a>
+                        </li>
+                        <li class="active">
+                            <a id="rodents">Rodents</a>
+                        </li>
+                        <li class="active">
+                            <a id="ungulates">Ungulates</a>
+                        </li>
+                        <li class="active">
+                            <a id="insects">Insects</a>
+                        </li>
+                        <li class="active">
+                            <a id="fish">Fishes</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <div class="intro-text">
                 <h2><b>Epic catchphrase here.</b></h2>
                 <h3>Research on threats towards New Zealand's Native plants available here.</h3>
             </div>
         </div>
-        <div class="threats">
+        <p class="count">Showing <span>25</span> of 25 pests.</p>
+        <ul class="threats">
             <div class="anima">
-                <img src="images/placeholder.png" alt="Image" class="card-image"><b>Stoat</b>
+                <li data-type="mustelids">
+                    <img src="images/placeholder.png" alt="Image" class="card-image"><b>Stoat</b>
+                </li>
             </div>
             <div class="anima">
-                <img src="images/placeholder.png" alt="Image" class="card-image"><b>Ferret</b>
+                <li data-type="mustelids">
+                    <img src="images/placeholder.png" alt="Image" class="card-image"><b>Ferret</b>
+                </li>
             </div>
             <div class="anima">
-                <img src="images/placeholder.png" alt="Image" class="card-image"><b>Weasel</b>
+                <li data-type="mustelids">
+                    <img src="images/placeholder.png" alt="Image" class="card-image"><b>Weasel</b>
+                </li>
             </div>
             <div class="anima">
-                <img src="images/placeholder.png" alt="Image" class="card-image"><b>Ship Rat</b>
+                <li data-type="rodents">
+                    <img src="images/placeholder.png" alt="Image" class="card-image"><b>Ship Rat</b>
+                </li>
+                
             </div>
             <div class="anima">
-                <img src="images/placeholder.png" alt="Image" class="card-image"><b>Norway/Brown Rat</b>
+                <li data-type="rodents">
+                    <img src="images/placeholder.png" alt="Image" class="card-image"><b>Norway/Brown Rat</b>
+                </li>
+               
             </div>
             <div class="anima">
-                <img src="images/placeholder.png" alt="Image" class="card-image"><b>Kiore/Pacific Rat</b>
+                <li data-type="rodents">
+                    <img src="images/placeholder.png" alt="Image" class="card-image"><b>Kiore/Pacific Rat</b>
+                </li>
+                
             </div>
             <div class="anima">
-                <img src="images/placeholder.png" alt="Image" class="card-image"><b>Cattle</b>
+                <li data-type="ungulates">
+                    <img src="images/placeholder.png" alt="Image" class="card-image"><b>Cattle</b>
+                </li>
+                
             </div>
             <div class="anima">
-                <img src="images/placeholder.png" alt="Image" class="card-image"><b>Sheep</b>
+                <li data-type="ungulates">
+                    <img src="images/placeholder.png" alt="Image" class="card-image"><b>Sheep</b>
+                </li>
+                
             </div>
             <div class="anima">
-                <img src="images/placeholder.png" alt="Image" class="card-image"><b>Deer</b>
+                <li data-type="ungulates">
+                    <img src="images/placeholder.png" alt="Image" class="card-image"><b>Deer</b>
+                </li>
+                
             </div>
             <div class="anima">
-                <img src="images/placeholder.png" alt="Image" class="card-image"><b>Pigs</b>
+                <li data-type="ungulates">
+                    <img src="images/placeholder.png" alt="Image" class="card-image"><b>Pigs</b>
+                </li>
             </div>
             <div class="anima">
-                <img src="images/placeholder.png" alt="Image" class="card-image"><b>Tahr</b>
+                <li data-type="ungulates">
+                    <img src="images/placeholder.png" alt="Image" class="card-image"><b>Tahr</b>
+                </li>
+                
             </div>
             <div class="anima">
-                <img src="images/placeholder.png" alt="Image" class="card-image"><b>Chamois</b>
+                <li data-type="ungulates">
+                    <img src="images/placeholder.png" alt="Image" class="card-image"><b>Chamois</b>
+                </li>
+                
             </div>
             <div class="anima">
-                <img src="images/placeholder.png" alt="Image" class="card-image"><b>Horses</b>
+                <li data-type="ungulates">
+                    <img src="images/placeholder.png" alt="Image" class="card-image"><b>Horses</b>
+                </li>
             </div>
             <div class="anima">
-                <img src="images/placeholder.png" alt="Image" class="card-image"><b>Wasps</b>
+                <li data-type="insects">
+                    <img src="images/placeholder.png" alt="Image" class="card-image"><b>Wasps</b>
+                </li>
             </div>
             <div class="anima">
-                <img src="images/placeholder.png" alt="Image" class="card-image"><b>Argentine ant</b>
+                <li data-type="insects">
+                    <img src="images/placeholder.png" alt="Image" class="card-image"><b>Argentine ant</b>
+                </li>
             </div>
             <div class="anima">
+                <li data-type="insects">
                 <img src="images/placeholder.png" alt="Image" class="card-image"><b>Great white butterfly</b>
+                </li>
             </div>
             <div class="anima">
-                <img src="images/placeholder.png" alt="Image" class="card-image"><b>Koi carp</b>
+                <li data-type="fish">
+                    <img src="images/placeholder.png" alt="Image" class="card-image"><b>Koi carp</b>
+                </li>
             </div>
             <div class="anima">
-                <img src="images/placeholder.png" alt="Image" class="card-image"><b>Rudd</b>
+                <li data-type="fish">
+                    <img src="images/placeholder.png" alt="Image" class="card-image"><b>Rudd</b>
+                </li>
             </div>
             <div class="anima">
-                <img src="images/placeholder.png" alt="Image" class="card-image"><b>Tench</b>
+                <li data-type="fish">
+                    <img src="images/placeholder.png" alt="Image" class="card-image"><b>Tench</b>
+                </li>
             </div>
             <div class="anima">
-                <img src="images/placeholder.png" alt="Image" class="card-image"><b>Perch</b>
+                <li data-type="fish">
+                    <img src="images/placeholder.png" alt="Image" class="card-image"><b>Perch</b>
+                </li>
             </div>
             <div class="anima">
-                <img src="images/placeholder.png" alt="Image" class="card-image"><b>Mosquito fish</b>
+                <li data-type="fish">
+                    <img src="images/placeholder.png" alt="Image" class="card-image"><b>Mosquito fish</b>
+                </li>
             </div>
             <div class="anima">
-                <img src="images/placeholder.png" alt="Image" class="card-image"><b>Catfish</b>
+                <li data-type="fish">
+                    <img src="images/placeholder.png" alt="Image" class="card-image"><b>Catfish</b>
+                </li>
             </div>
             <div class="anima">
-                <img src="images/placeholder.png" alt="Image" class="card-image"><b>Weeds</b>
+                <li data-type="weeds">
+                    <img src="images/placeholder.png" alt="Image" class="card-image"><b>Weeds</b>
+                </li>   
             </div>
             <div class="anima">
-                <img src="images/placeholder.png" alt="Image" class="card-image"><b>Natural events</b>
+                <li data-type="other">
+                    <img src="images/placeholder.png" alt="Image" class="card-image"><b>Natural events</b>
+                </li>  
             </div>
             <div class="anima">
-                <img src="images/placeholder.png" alt="Image" class="card-image"><b>Human induced threats</b>
+                <li data-type="other">
+                    <img src="images/placeholder.png" alt="Image" class="card-image"><b>Human induced threats</b>
+                </li>
             </div>
-        </div>
+        </ul>
         
     </section>
 </body>
