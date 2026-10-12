@@ -214,7 +214,7 @@ nav{
 }
 
 .dropdown-wrapper .dropdown-toggle {
-    border-radius:5px;
+    border-radius:30px;
     border:none;
     background:var(--dark-green);
     color:var(--light-green);
@@ -241,7 +241,7 @@ nav{
     padding: 10px 10px 10px 0;
     z-index: 1;
     height:65px;
-    display:none;
+    
 }
 
 .dropdown {
@@ -261,4 +261,13 @@ nav{
     list-style:none;
     height:50px;
     overflow-y: auto;
+}
+
+
+.dropdown-wrapper .dropdown ul::-webkit-scrollbar {
+  width: 10px;
+}
+
+.dropdown-wrapper .dropdown ul::-webkit-scrollbar-thumb {
+  background: #113c24;;
 }
