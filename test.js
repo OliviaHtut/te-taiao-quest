@@ -1,20 +1,11 @@
-$(document).ready(function(){
-  $('.your-class').slick({
-    var :slickopts= {
-         slidesToShow: 3,
-        slidesToScroll: 3,
-        rows: 3, // Removes the linear order. Would expect card 5 to be on next row, not stacked in groups.
-  responsive: [
-    { breakpoint: 992,
-      settings: {
-        slidesToShow: 3
-      }
-    },
-    { breakpoint: 776,
-      settings: {
-        slidesToShow: 1,
-        rows: 1 // This doesn't appear to work in responsive (Mac/Chrome)
-      }
-    }]}
-  });
-});
+const dropdownWrapper = document.querySelector(".dropdown-wrapper");
+const dropdownToggle = document.querySelector(".dropdown-toggle");
+const dropdownToggleSpan = document.querySelector("span");
+const dropdown = document.querySelector(".dropdown");
+const dropdownLinks = document.querySelectorAll("a");
+const threatsList = document.querySelector("threats");
+const threats = threatsList.querySelectorAll("li");
+const total = document.querySelector(".count span");
+const HIDDEN_CLASS = "hidden";
+const ACTIVE_CLASS = "active";
+const OPEN_CLASS = "open";
